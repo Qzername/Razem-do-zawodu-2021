@@ -22,6 +22,7 @@ namespace Lekcjobot.Code
             //default
             Blacklist = new List<string>();
             Blacklist.Add("p_Sprzedaz towarów");
+            Blacklist.Add("Podstawy handlu");
 
             Servers = new Dictionary<ulong, ulong>();
             Servers.Add(743551390324097054, 776751040887783427);
@@ -31,8 +32,11 @@ namespace Lekcjobot.Code
         {
             for (int i = lessons.Count - 1; i > -1; i--)
                 foreach (string s in Blacklist)
-                    if (lessons[i].lesson == s)
+                    if (lessons[i].lesson == s )
                         lessons.RemoveAt(i);
+            for (int i = lessons.Count - 1; i > 0; i--)
+                if (lessons[i - 1].lesson == lessons[i].lesson)
+                    lessons.RemoveAt(i);
         }
     }
 }
