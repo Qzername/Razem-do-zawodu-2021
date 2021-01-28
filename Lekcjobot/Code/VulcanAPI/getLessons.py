@@ -22,6 +22,6 @@ day = datetime.date(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))
 final = "";
 
 for lesson in client.get_lessons(day, day):
-    final += lesson.teacher.name + "!" + lesson.subject.name + "!" + lesson.from_.strftime("%H:%M:%S") + "!" + lesson.to.strftime("%H:%M:%S") + "|";
+    final += lesson.teacher.name + "!" + lesson.subject.name + "!" + lesson.from_.strftime("%Y/%m/%d %H:%M:%S") + "!" + lesson.to.strftime("%Y/%m/%d %H:%M:%S") + "|";
 
 print(final, file=utf8stdout);

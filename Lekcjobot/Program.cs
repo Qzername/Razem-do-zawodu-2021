@@ -4,6 +4,7 @@ using Discord.Commands;
 using Discord.WebSocket;
 using Lekcjobot.Code;
 using Lekcjobot.Code.Models;
+using Lekcjobot.Code.Modules;
 using Lekcjobot.Code.VulcanAPIIO;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,7 @@ namespace Lekcjobot
             _client.Ready += ReadyAsync;
 
             lessonTimer = new Timer();
-            lessonTimer.Interval = 5000; //900000 = 15 min, 60000 = 1 min
+            lessonTimer.Interval = 10000; //900000 = 15 min, 60000 = 1 min
             lessonTimer.Elapsed += EpisodeTimerElapsed;
             lessonTimer.Enabled = true;
         }
@@ -64,17 +65,20 @@ namespace Lekcjobot
 
         void EpisodeTimerElapsed(object sender, ElapsedEventArgs e)
         {
+            lessonTimer.Enabled = false;
             List<SocketGuild> servers = _client.Guilds.ToAsyncEnumerable().ToEnumerable().ToList();
 
-           // checklessontime = new DateTime(checklessontime.Year, checklessontime.Month, checklessontime.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
-            CheckForLessons(ref lessons);
+            checklessontime = new DateTime(checklessontime.Year, checklessontime.Month, checklessontime.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+            var lessons = CheckForLessons();
             RAMDatabase.RemoveBlacklistedLessons(ref lessons);
 
             var lessonsInFuture = lessons.FindAll(x => x.dateFrom.Ticks - DateTime.Now.Ticks > 0);
             var lessonNow = lessons.Find(x => x.dateFrom.Ticks < DateTime.Now.Ticks && x.dateTo.Ticks > DateTime.Now.Ticks);
 
             TimeSpan ts = lessonsInFuture[0].dateFrom - DateTime.Now;
-            lessonTimer.Interval =  ts.TotalMilliseconds + 1000;
+            lessonTimer.Interval =  ts.TotalMilliseconds + 10000;
+
+            Console.WriteLine(ts);
 
             if (lessonNow is null)
                 return;
@@ -84,21 +88,24 @@ namespace Lekcjobot
                 if (RAMDatabase.Servers.Any(x => x.Key == guild.Id))
                 {
                     var channel = guild.GetTextChannel(RAMDatabase.Servers[guild.Id]);
-                    channel.SendMessageAsync("@informatyk LEKCJA KURWY: " + lessonNow.lesson);
+                    channel.SendMessageAsync("LEKCJA KURWY: " + lessonNow.lesson);//"LEKCJA KURWY: " + lessonNow.lesson
+                    comm.PlaySound(guild);
                 }
             }
         }
 
-        void CheckForLessons(ref List<Lesson> lessons)
+        List<Lesson> CheckForLessons()
         {
-            lessons = new List<Lesson>(VulcanAPI.createLessons(VulcanAPI.runScript("./Code/VulcanAPI/getLessons.py", string.Format("{0} {1} {2}",checklessontime.Year, checklessontime.Month, checklessontime.Day))));
-            Console.WriteLine(lessons[0].lesson);
+            List<Lesson> lessons = new List<Lesson>(VulcanAPI.createLessons(VulcanAPI.runScript("./Code/VulcanAPI/getLessons.py", string.Format("{0} {1} {2}", checklessontime.Year, checklessontime.Month, checklessontime.Day))));
 
-            while (lessons.FindAll(x => x.dateFrom < checklessontime).Count == 0)
+            while (lessons.FindAll(x => x.dateFrom > checklessontime).Count == 0)
             {
-                checklessontime = new DateTime(checklessontime.Year, checklessontime.Month, checklessontime.Day+1, 0, 0, 0);
+                checklessontime = checklessontime.AddDays(1);
+                checklessontime = new DateTime(checklessontime.Year, checklessontime.Month, checklessontime.Day, 0, 0, 0);
                 lessons = new List<Lesson>(VulcanAPI.createLessons(VulcanAPI.runScript("./Code/VulcanAPI/getLessons.py", string.Format("{0} {1} {2}", checklessontime.Year, checklessontime.Month, checklessontime.Day))));
             }
+
+            return lessons;
         }
     }
 }

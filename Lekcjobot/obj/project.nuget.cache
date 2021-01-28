@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kBCLtbyh9SN6xZ9wg937hlxa76uwm0HwojNB0RrOGcAEAlHEH3GrRgcm4Q/A5K2CZ+bcJNJEpx/c540OYG0oWg==",
+  "dgSpecHash": "KVV2fbPRF2sIWvoc++WFn9xcEyP+kiSHNikhmeXOQQMk5Y1P6CjWnNvAgznvtg+p76lbit7eQW5lPardBbALUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\huber\\source\\repos\\Szkolnik\\Lekcjobot\\Lekcjobot.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,8 @@
     "C:\\Users\\huber\\.nuget\\packages\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\huber\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\huber\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
-    "C:\\Users\\huber\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\huber\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\huber\\.nuget\\packages\\victoria\\5.1.11\\victoria.5.1.11.nupkg.sha512"
   ],
   "logs": []
 }

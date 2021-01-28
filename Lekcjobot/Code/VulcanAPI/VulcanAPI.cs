@@ -37,7 +37,6 @@ namespace Lekcjobot.Code.VulcanAPIIO
                 string[] elements = line.Split('!');
                 list.Add(new Lesson(elements[0], elements[1], Convert.ToDateTime(elements[2]), Convert.ToDateTime(elements[3])));
             }
-
             return list.ToArray();
         }
     }
