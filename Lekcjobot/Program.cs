@@ -65,7 +65,6 @@ namespace Lekcjobot
 
         void EpisodeTimerElapsed(object sender, ElapsedEventArgs e)
         {
-            lessonTimer.Enabled = false;
             List<SocketGuild> servers = _client.Guilds.ToAsyncEnumerable().ToEnumerable().ToList();
 
             checklessontime = new DateTime(checklessontime.Year, checklessontime.Month, checklessontime.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);

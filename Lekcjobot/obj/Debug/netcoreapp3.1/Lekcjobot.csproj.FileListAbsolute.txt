@@ -25,3 +25,4 @@ C:\Users\huber\source\repos\Szkolnik\Lekcjobot\bin\Debug\netcoreapp3.1\System.Li
 C:\Users\huber\source\repos\Szkolnik\Lekcjobot\obj\Debug\netcoreapp3.1\Lekcjobot.csproj.CopyComplete
 C:\Users\huber\source\repos\Szkolnik\Lekcjobot\bin\Debug\netcoreapp3.1\Code\VulcanAPI\getLessons.py
 C:\Users\huber\source\repos\Szkolnik\Lekcjobot\bin\Debug\netcoreapp3.1\Victoria.dll
+C:\Users\huber\source\repos\Szkolnik\Lekcjobot\bin\Debug\netcoreapp3.1\Code\VulcanAPI\getMarks.py

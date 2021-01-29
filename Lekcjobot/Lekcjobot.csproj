@@ -18,6 +18,9 @@
     <None Update="Code\VulcanAPI\getLessons.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Code\VulcanAPI\getMarks.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

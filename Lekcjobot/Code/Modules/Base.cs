@@ -35,7 +35,7 @@ namespace Lekcjobot.Code
                     if (lessons[i].lesson == s )
                         lessons.RemoveAt(i);
             for (int i = lessons.Count - 1; i > 0; i--)
-                if (lessons[i - 1].lesson == lessons[i].lesson)
+                if (lessons[i - 1].dateFrom == lessons[i].dateFrom)
                     lessons.RemoveAt(i);
         }
     }
@@ -46,6 +46,12 @@ namespace Lekcjobot.Code.Modules
 
     public class Base : ModuleBase<SocketCommandContext>
     {
+        [Command("testmarks")]
+        public async Task testmarks()
+        {
+            await ReplyAsync(VulcanAPI.runScript("./Code/VulcanAPI/getMarks.py", "cert"));
+        }
+
         [Command("addtoblacklist")]
         public async Task atbl([Remainder] string lessonname)
         {
