@@ -5,7 +5,27 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lekcjobot", "Lekcjobot\Lekcjobot.csproj", "{84D7ACE4-78DB-4649-9739-DB7E062AD6B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolnikAPI", "SzkolnikAPI\SzkolnikAPI.csproj", "{2DA36F01-932F-4ABF-B393-0E23958CEF1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzkolnikAPI", "SzkolnikAPI\SzkolnikAPI.csproj", "{2DA36F01-932F-4ABF-B393-0E23958CEF1D}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Szkolnik", "Szkolnik\", "{8424AE3A-B9D2-4D64-90C4-C42DC3F0D927}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58448"
+		Debug.AspNetCompiler.PhysicalPath = "Szkolnik\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58448\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58448"
+		Release.AspNetCompiler.PhysicalPath = "Szkolnik\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58448\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58448"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +41,10 @@ Global
 		{2DA36F01-932F-4ABF-B393-0E23958CEF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DA36F01-932F-4ABF-B393-0E23958CEF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DA36F01-932F-4ABF-B393-0E23958CEF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8424AE3A-B9D2-4D64-90C4-C42DC3F0D927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8424AE3A-B9D2-4D64-90C4-C42DC3F0D927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8424AE3A-B9D2-4D64-90C4-C42DC3F0D927}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8424AE3A-B9D2-4D64-90C4-C42DC3F0D927}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
