@@ -1,0 +1,22 @@
+#main
+{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(50vh - 100px);
+}
+
+.center-text
+{
+    width: 100%;
+    text-align: center;
+}
+
+#logpass
+{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}

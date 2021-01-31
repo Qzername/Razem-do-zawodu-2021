@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="./js/token.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="center-text">Szkolnik - Rejestracja tokenu<br><br></div>
+
+            <div id="logpass">
+                <label>Token: </label>
+                <input type="text" id="tokeninput"><br><br>
+                <label>Symbol: </label>
+                <input type="text" id="symbolinput"><br><br>
+                <label>Pin: </label>
+                <input type="text" id="pininput"><br><br>
+            </div>  
+
+            <div class="center-text">
+                <button onclick="RegisterToken()">Zarejestruj token</button>
+                <button onclick="Logout()">Wyloguj</button>
+            </div> 
+
+            <div class="center-text" id="output"></div>
+        </div>
+    </body>
+</html>

@@ -1,4 +1,5 @@
 ﻿using Lekcjobot.Code;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace SzkolnikAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("MyPolicy")]
     public class Accounts : ControllerBase
     {
         // GET: api/<Accounts>
@@ -32,7 +34,7 @@ namespace SzkolnikAPI.Controllers
         public string GetVulcanToken(string login)
         {
             var act = SQLAccounts.GetAccount(login);
-            return act.token;
+            return JSONReader.Serialize(act);
         }
 
         [HttpPost("[action]")]

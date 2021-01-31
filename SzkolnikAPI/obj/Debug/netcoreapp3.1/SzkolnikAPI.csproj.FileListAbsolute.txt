@@ -48,3 +48,4 @@ C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\obj\Debug\netcoreapp3.1\Szkolni
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\3S1LA6G.json
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Python\getLessons.py
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Python\getMarks.py
+C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Python\register.py

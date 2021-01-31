@@ -22,6 +22,9 @@
     <None Update="Code\Python\getLessons.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Code\Python\register.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Database\Szkolnik.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

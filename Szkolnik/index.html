@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="./js/registerpage.js"></script>
     </head>
     <body>
-        Szkolnik
+        <div id="main">
+            <div class="center-text">Szkolnik <br><br></div>
+
+            <div id="logpass">
+                <label>Login:</label>
+                <input type="text" id="logininput"><br><br>
+                <label>Hasło:</label>
+                <input type="password" id="passwordinput"><br><br>
+            </div>
+            
+            <div class="center-text">
+                <button onclick="Login()">Zaloguj</button>
+                <button onclick="Register()">Zarejestruj</button>
+            </div> <br>
+
+            <div class="center-text" id="output"></div>
+            
+        </div>
+        
     </body>
 </html>
