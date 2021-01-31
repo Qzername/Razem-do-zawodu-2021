@@ -45,7 +45,7 @@ C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\runtime
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\obj\Debug\netcoreapp3.1\SzkolnikAPI.csproj.CopyComplete
-C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\3S1LA6G.json
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Python\getLessons.py
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Python\getMarks.py
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Python\register.py
+C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\3S1LH30.json
