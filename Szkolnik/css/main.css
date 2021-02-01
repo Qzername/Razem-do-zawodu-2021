@@ -1,9 +1,59 @@
+body{
+    font-family: Segoe-Bolt;
+    color: rgb(0,123,255);
+    background-image: url("./img/tlo.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.graytext{
+    color: rgb(36,61,67);
+    padding-top: 6%;
+    font-size: 50px;
+}
+
+h1{
+    font-family: Segoe;
+    font-size: 100px;
+}
+
+input
+{
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid rgb(0,123,255);
+    height: 20px;
+    font-family: Segoe;
+}
+input:focus {
+    outline: 0 !important;
+}
+
+button
+{
+    border: 2px solid rgb(0,123,255);
+    width: 100px;
+    height: 40px;
+    font-family: Segoe-Bolt;
+    color: rgb(0,123,255);
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 15px;
+}
+button:focus {
+    outline: 0 !important;
+}
+
 #main
 {
-    width: 300px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    background-color: white;
+    width: 500px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: calc(50vh - 100px);
+    margin-top: calc(37vh - 200px);
 }
 
 .center-text
@@ -14,9 +64,16 @@
 
 #logpass
 {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-
+    width: 100%;
     text-align: center;
+}
+
+@font-face {
+    font-family: Segoe-Bolt;
+    src: url(./font.ttf);
+}
+
+@font-face {
+    font-family: Segoe;
+    src: url(./SegoeUI.woff);
 }

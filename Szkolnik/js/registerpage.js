@@ -7,7 +7,9 @@ function Register()
 {
     if(document.getElementById("logininput").value == "" ||document.getElementById("passwordinput").value=="")
     {
-        document.getElementById("output").innerHTML = "Hasło i login muszą być wypełnione.";
+        output = document.getElementById("output");
+        output.innerHTML = "Hasło i login muszą być wypełnione.";
+        output.style.color = "red";
         return;
     }
 
@@ -16,7 +18,9 @@ function Register()
     fetch( api + '/api/Accounts/Register/', {
     method: 'POST', headers: {'Content-Type': 'application/json',},body: JSON.stringify(data),}).then(response => response.json()).then(data => {console.log('Success:', data);}).catch((error) => {console.error('Error:', error);});
 
-    document.getElementById("output").innerHTML = "Zarejestrowano";
+    output = document.getElementById("output");
+    output.innerHTML = "Zarejestrowano";
+    output.style.color = "green";
 }
 
 async function Login()

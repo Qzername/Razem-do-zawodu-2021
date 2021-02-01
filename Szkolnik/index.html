@@ -3,24 +3,25 @@
     <head>
         <link rel="stylesheet" href="css/main.css">
         <script src="./js/registerpage.js"></script>
+        <link rel="icon" href="./img/icon.png">
+        <title>Szkolnik - Logowanie</title>
     </head>
     <body>
+        <div class="center-text"><h1 style="margin: 0px;">Szkolnik</h1></div>
         <div id="main">
-            <div class="center-text">Szkolnik <br><br></div>
+            <div class="center-text"><h1 class="graytext">Logowanie</h1></div>
 
             <div id="logpass">
-                <label>Login:</label>
-                <input type="text" id="logininput"><br><br>
-                <label>Hasło:</label>
-                <input type="password" id="passwordinput"><br><br>
+                <input type="text" id="logininput" placeholder="Login"><br><br>
+                <input type="password" id="passwordinput" placeholder="Hasło"><br><br>
             </div>
-            
-            <div class="center-text">
-                <button onclick="Login()">Zaloguj</button>
+
+            <div class="center-text" style="padding-top:5%;">
+                <button onclick="Login()" style="margin-right: 25px;">Zaloguj</button>                
                 <button onclick="Register()">Zarejestruj</button>
             </div> <br>
 
-            <div class="center-text" id="output"></div>
+            <div class="center-text" style="color:red; padding-top: 1%" id="output"></div>
             
         </div>
         

@@ -87,7 +87,7 @@ namespace Code
 
         public void PlaySound(Discord.IGuild guild)
         {
-            var vc = guild.GetVoiceChannelAsync(785785408117669898).Result;
+            var vc = guild.GetVoiceChannelAsync(804634349676527616).Result;
             lavanode.JoinAsync(vc);
             var player = lavanode.GetPlayer(guild);
             player.PlayAsync(lavanode.SearchAsync(@"https://www.youtube.com/watch?v=qIQqODMAqfk").Result.Tracks[0]);

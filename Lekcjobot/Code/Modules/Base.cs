@@ -25,7 +25,7 @@ namespace Lekcjobot.Code
             Blacklist.Add("Podstawy handlu");
 
             Servers = new Dictionary<ulong, ulong>();
-            Servers.Add(743551390324097054, 776751040887783427);
+            Servers.Add(743551390324097054, 804634349676527616);
         }
 
         public static void RemoveBlacklistedLessons(ref List<Lesson> lessons)
