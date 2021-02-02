@@ -25,6 +25,8 @@ function Register()
 
 async function Login()
 {
+    output.style.color = "red";
+
     if(document.getElementById("logininput").value == "" ||document.getElementById("passwordinput").value=="")
     {
         document.getElementById("output").innerHTML = "Hasło i login muszą być wypełnione.";

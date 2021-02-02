@@ -2,28 +2,27 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/registertoken.css">
         <script src="./js/token.js"></script>
-        <link rel="icon" href="./img/icon.png">
+        <link rel="icon" href="./css/img/icon.png">
+        <meta charset="UTF-8">
         <title>Rejestracja tokenu</title>
     </head>
     <body>
+        <div class="center-text"><h1 style="margin: 0px;">Szkolnik</h1></div>
         <div id="main">
-            <div class="center-text">Szkolnik - Rejestracja tokenu<br><br></div>
+            <div class="center-text"><h1 class="graytext">Rejestracja tokenu </h1></div>
 
             <div id="logpass">
-                <label>Token: </label>
-                <input type="text" id="tokeninput"><br><br>
-                <label>Symbol: </label>
-                <input type="text" id="symbolinput"><br><br>
-                <label>Pin: </label>
-                <input type="text" id="pininput"><br><br>
+                <input type="text" id="tokeninput" placeholder="Token"><br><br>
+                <input type="text" id="symbolinput" placeholder="Symbol"><br><br>
+                <input type="text" id="pininput" placeholder="Pin"><br><br>
             </div>  
 
             <div class="center-text">
                 <button onclick="RegisterToken()">Zarejestruj token</button>
                 <button onclick="Logout()">Wyloguj</button>
-            </div> 
-
+            </div>
             <div class="center-text" id="output"></div>
         </div>
     </body>

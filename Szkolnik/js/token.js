@@ -15,6 +15,7 @@ async function RegisterToken()
 {
     if(document.getElementById("tokeninput").value == "" ||document.getElementById("symbolinput").value==""||document.getElementById("pininput").value=="")
     {
+        output.style.color = "red";
         document.getElementById("output").innerHTML = "Wszystkie pola muszą być wypełnione.";
         return;
     }

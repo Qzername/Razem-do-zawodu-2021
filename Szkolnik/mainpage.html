@@ -2,20 +2,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mainpage.css">
         <script src="./js/mainpage.js"></script>
         <link rel="icon" href="./css/img/icon.png">
         <title>Szkolnik</title>
     </head>
     <body>
+        <div class="center-text"><h1 style="margin: 0px;">Szkolnik</h1></div>
         <div id="main">
-            <div class="center-text">Szkolnik <br> Strona główna<br></div> <br> <br>
+            <div id="topside">
+                <div class="center-text">
+                    <button class="TopButtons" onclick="Lessons()">Plan lekcji</button>
+                    <button class="TopButtons" onclick="Marks()">Oceny</button>
+                    <button class="TopButtons" onclick="Logout()">Wyloguj</button>    
+                </div>
 
-            <div class="center-text" id="output">tragedy</div> <br> <br>
-
-            <div class="center-text">
-                <button onclick="Lessons()">Plan lekcji</button>
-                <button onclick="Marks()">Oceny</button>
-                <button onclick="Logout()">Wyloguj</button>    
             </div>
             
         </div>

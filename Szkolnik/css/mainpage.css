@@ -1,0 +1,22 @@
+#main
+{
+    margin-top: calc(27vh - 200px);
+    border-radius: 5px;
+    width:85%;
+    height: 75vh;
+}
+
+.TopButtons {
+    border-color: white;
+    color: white;
+    border-radius: 0;
+    margin-top: 1.5vh !important; 
+}
+
+#topside
+{
+    width: 100%;
+    height: 8vh;
+    background-color:rgb(0,123,255);
+    border-bottom: rgb(93, 151, 214) dotted;
+}
