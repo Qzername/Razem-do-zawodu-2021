@@ -112,6 +112,13 @@ body
     height: 100%;
 }
 
+#todaylessonscontent
+{
+    width: 100%;
+    text-align:center;
+    color:white;
+}
+
 .center-text
 {
     color:white;

@@ -3,7 +3,9 @@
     <head>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/mainpage.css">
+        <link rel="stylesheet" href="css/sliderbox.css">
         <script src="./js/mainpage.js"></script>
+        <script src="./js/mainpagefunctions.js"></script>
         <link rel="icon" href="./css/img/icon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <title>Szkolnik</title>
@@ -23,20 +25,32 @@
 
         <div id="main">
             <div id="list">
-                <div class="center-text"><button class="choose">Oceny</button></div>
-                <div class="center-text"><button class="choose">Plan lekcji</button></div>
+                <div class="center-text"><button onclick="Marks()" class="choose">Oceny</button></div>
+                <div class="center-text"><button onclick="Lessons()" class="choose">Plan lekcji</button></div>
             </div>
 
             <div id="content">
                 <div id="contenttitle" class="center-text" style="font-size: 50px;height: 50px;">Strona główna</div>
+                <div class="slider" id="mainslider">
+                    <div id="contentjs">
+
+                        <br>
+                        <div class="center-text">Witamy w Szkolniku. </div>
+                        <div class="center-text">Wybierz opcje po prawej!</div>
+                    </div>
+                </div>
             </div>
 
             <div id="todaylessons">
                 <div class="center-text" style="font-size: 50px;height: 50px;">Plan lekcji</div>
                 <div class="center-text" style="font-size: 25px; margin-top: 5px;">Na dziś</div>
-                <div id="todaylessonscontent">
+                <div class="slider">
+                    <div id="todaylessonscontent">
 
+                    
+                    </div>
                 </div>
+                
             </div>
         </div>
 
@@ -46,5 +60,7 @@
                 <button>Wyloguj</button>
             </div>
         </div>
+
+        
     </body>
 </html>
