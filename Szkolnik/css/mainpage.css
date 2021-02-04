@@ -1,22 +1,119 @@
+body
+{
+    font-family: Segoe;
+    background: none;
+}
+
+#logo
+{
+    width: 21%;
+    height: 18vh;
+}
+
+#time
+{
+    color:white;
+    float:right;
+    background-color: rgb(0,123,255);
+    width:auto;
+    height: 8vh;
+    font-size: 4vh;
+    padding:10px;
+    padding-bottom: 15px;
+    margin: 15px;
+}
+
+#icon
+{
+    height: 100%;
+    float:right;
+    margin-top:0.5vh;
+    margin-left: 1vh;
+}
+#timer
+{
+    height: 100%;
+    display: inline-block;
+}
+
+#logoutbutton
+{
+    float: right;
+    clear:both;
+    display: block;
+    width: 125px;
+    margin-right: 2%;
+}
+
+.choose
+{
+    background-color:transparent;
+    border-radius: 0px;
+    font-size: 36px;
+    border-bottom: white dotted 2px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+    height: 55px;
+}
+
+#downside
+{
+    width: 40%;
+    height: 6.5vh; 
+    background-color:  rgb(0,123,255);
+    color:white;
+    
+    position: absolute;
+    bottom: 0;
+    right:0;
+
+    font-size: 4vh;
+    font-family: Segoe;
+    padding-left: 1%;
+}
+
 #main
 {
-    margin-top: calc(27vh - 200px);
-    border-radius: 5px;
-    width:85%;
-    height: 75vh;
-}
-
-.TopButtons {
-    border-color: white;
-    color: white;
-    border-radius: 0;
-    margin-top: 1.5vh !important; 
-}
-
-#topside
-{
     width: 100%;
-    height: 8vh;
-    background-color:rgb(0,123,255);
-    border-bottom: rgb(93, 151, 214) dotted;
+    height: 72vh;
+    background-color: transparent;
+    border:none;
+    border-radius: 0px;
+    margin-top: 0.7vh;
+}
+
+#list
+{
+    float:right;
+    width: 15%;
+    height: 100%;
+    background-color: rgb(0,123,255);
+}
+
+#content
+{
+    width: 55%;
+    height: 100%;
+    background-color: rgb(0,123,255);
+    display: inline-block;
+    float: right;
+    margin-right: 2%;
+}
+
+#todaylessons
+{
+    margin-right: 2%;
+    background-color: rgb(0,123,255);
+    display: inline-block;
+    float:right;
+    width: 24%;
+    height: 100%;
+}
+
+.center-text
+{
+    color:white;
+    height: auto;
 }

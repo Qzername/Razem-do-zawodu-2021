@@ -5,21 +5,46 @@
         <link rel="stylesheet" href="css/mainpage.css">
         <script src="./js/mainpage.js"></script>
         <link rel="icon" href="./css/img/icon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <title>Szkolnik</title>
     </head>
     <body>
-        <div class="center-text"><h1 style="margin: 0px;">Szkolnik</h1></div>
-        <div id="main">
-            <div id="topside">
-                <div class="center-text">
-                    <button class="TopButtons" onclick="Lessons()">Plan lekcji</button>
-                    <button class="TopButtons" onclick="Marks()">Oceny</button>
-                    <button class="TopButtons" onclick="Logout()">Wyloguj</button>    
-                </div>
+        <img id="logo" src="./css/img/logo.png"/>
 
+        <div id="time">
+            <div id="timer">
+                10:35 |
             </div>
-            
+            <svg xmlns="http://www.w3.org/2000/svg" width="4vh" height="4vh" fill="currentColor" class="bi bi-clock" id="icon"viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
         </div>
-        
+
+        <div id="main">
+            <div id="list">
+                <div class="center-text"><button class="choose">Oceny</button></div>
+                <div class="center-text"><button class="choose">Plan lekcji</button></div>
+            </div>
+
+            <div id="content">
+                <div id="contenttitle" class="center-text" style="font-size: 50px;height: 50px;">Strona główna</div>
+            </div>
+
+            <div id="todaylessons">
+                <div class="center-text" style="font-size: 50px;height: 50px;">Plan lekcji</div>
+                <div class="center-text" style="font-size: 25px; margin-top: 5px;">Na dziś</div>
+                <div id="todaylessonscontent">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="downside">
+            <span id="logininfo"></span>
+            <div id="logoutbutton" onclick="Logout()">
+                <button>Wyloguj</button>
+            </div>
+        </div>
     </body>
 </html>
