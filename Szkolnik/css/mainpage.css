@@ -94,12 +94,19 @@ body
 
 #content
 {
-    width: 55%;
+    width: 59%;
     height: 100%;
     background-color: rgb(0,123,255);
     display: inline-block;
     float: right;
     margin-right: 2%;
+    padding: 10px;
+}
+
+#contentjs
+{
+  width: 100%;
+  color:white;
 }
 
 #todaylessons
@@ -108,7 +115,7 @@ body
     background-color: rgb(0,123,255);
     display: inline-block;
     float:right;
-    width: 24%;
+    width: 20%;
     height: 100%;
 }
 
@@ -123,4 +130,37 @@ body
 {
     color:white;
     height: auto;
+}
+
+.mark
+{
+    width: 4vw;
+    height: 4vw;
+    border: gray solid 2px;
+    color: gray;
+    font-size: 3vw;
+    text-align: center;
+    padding: 0px !important;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.marktitle
+{
+    font-size: 35px;
+}
+
+.day
+{
+    width: 17%;
+    margin-right: 20px;
+    background-color: transparent;
+    height: 60.5vh;
+    display: inline-block;
+    border: gray solid 2px;
+  overflow-x: auto;
+}
+.day:last-child
+{
+    margin-right: 0px;
 }
