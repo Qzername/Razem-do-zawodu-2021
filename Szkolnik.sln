@@ -25,7 +25,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Szkolnik", "Szkolnik\", "{8
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "58448"
+		SlnRelativePath = "Szkolnik\"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolnikMobileApp.Android", "SzkolnikMobileApp\SzkolnikMobileApp.Android\SzkolnikMobileApp.Android.csproj", "{02B16C38-2E5F-41BE-83EE-EE1473552CFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolnikMobileApp", "SzkolnikMobileApp\SzkolnikMobileApp\SzkolnikMobileApp.csproj", "{804446FC-5CF1-4212-A8FF-ECDFA8500967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +50,16 @@ Global
 		{8424AE3A-B9D2-4D64-90C4-C42DC3F0D927}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8424AE3A-B9D2-4D64-90C4-C42DC3F0D927}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{8424AE3A-B9D2-4D64-90C4-C42DC3F0D927}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{02B16C38-2E5F-41BE-83EE-EE1473552CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B16C38-2E5F-41BE-83EE-EE1473552CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B16C38-2E5F-41BE-83EE-EE1473552CFE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{02B16C38-2E5F-41BE-83EE-EE1473552CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B16C38-2E5F-41BE-83EE-EE1473552CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B16C38-2E5F-41BE-83EE-EE1473552CFE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{804446FC-5CF1-4212-A8FF-ECDFA8500967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804446FC-5CF1-4212-A8FF-ECDFA8500967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804446FC-5CF1-4212-A8FF-ECDFA8500967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804446FC-5CF1-4212-A8FF-ECDFA8500967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
