@@ -4,7 +4,6 @@ C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\bin\Deb
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\bin\Debug\netstandard2.0\SzkolnikMobileApp.pdb
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\SzkolnikMobileApp.csprojAssemblyReference.cache
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\SzkolnikMobileApp.AssemblyInfoInputs.cache
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\SzkolnikMobileApp.AssemblyInfo.cs
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\SzkolnikMobileApp.csproj.CoreCompileInputs.cache
@@ -12,3 +11,6 @@ C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Deb
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\SzkolnikMobileApp.dll
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\ref\SzkolnikMobileApp.dll
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\SzkolnikMobileApp.pdb
+C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\TokenRegistery.xaml.g.cs
+C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\Main.xaml.g.cs

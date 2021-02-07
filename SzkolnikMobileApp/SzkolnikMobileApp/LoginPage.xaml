@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SzkolnikMobileApp.LoginPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Szkolnik - Logowanie" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <Entry x:Name="loginentry" Placeholder="Login" Margin="0,240,0,0" />
+        <Entry x:Name="passwordentry" IsPassword="true" Placeholder="Hasło" />
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Login" Clicked="LoginClicked" WidthRequest="250"/>
+            <Button Text="Zarejestruj" Clicked="RegisterClicked" WidthRequest="250"/>
+        </StackLayout>
+        
+        <Label x:Name="output" HorizontalTextAlignment="Center" ></Label>
+    </StackLayout>
+
+</ContentPage>

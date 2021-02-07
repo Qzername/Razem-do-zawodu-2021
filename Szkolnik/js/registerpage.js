@@ -1,7 +1,7 @@
 var login;
 var password;
 
-api = "https://localhost:5001";
+api = "http://192.168.2.36:5000";
 
 function Register()
 {

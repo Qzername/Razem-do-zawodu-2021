@@ -49,3 +49,6 @@ C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Py
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Python\getMarks.py
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Code\Python\register.py
 C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\3S1LH30.json
+C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\huber\source\repos\Szkolnik\SzkolnikAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
