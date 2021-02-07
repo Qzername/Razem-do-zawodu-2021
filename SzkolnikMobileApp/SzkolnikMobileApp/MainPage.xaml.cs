@@ -16,5 +16,12 @@ namespace SzkolnikMobileApp
         {
             InitializeComponent();
         }
+
+        private void LogoutClicked(object sender, EventArgs e)
+        {
+            Application.Current.Properties["login"] = null;
+            Application.Current.Properties["password"] = null;
+            Application.Current.MainPage = new LoginPage();
+        }
     }
 }

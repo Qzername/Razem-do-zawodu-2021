@@ -16,6 +16,11 @@ namespace SzkolnikMobileApp
         {
             HTTPRequest.api = @"http://192.168.2.36:5000"; 
             InitializeComponent();
+
+            if (Application.Current.Properties["login"] is null)
+                return;
+
+            Application.Current.MainPage = new TokenRegistery();
         }
 
         private void LoginClicked(object sender, EventArgs e)
@@ -43,8 +48,14 @@ namespace SzkolnikMobileApp
             }
             button.IsEnabled = true;
 
-            if(acc.password == acc.token)
-                Application.Current.MainPage = new TokenRegistery(loginentry.Text, acc.token);
+            Application.Current.Properties["login"] = loginentry.Text;
+            Application.Current.Properties["password"] = passwordentry.Text;
+
+            if (acc.password == acc.token)
+            {
+                Application.Current.MainPage = new TokenRegistery();
+                return;
+            }
 
             Application.Current.MainPage = new MainPage();
 

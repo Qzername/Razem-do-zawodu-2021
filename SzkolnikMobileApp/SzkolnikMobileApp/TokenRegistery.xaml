@@ -2,11 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SzkolnikMobileApp.TokenRegistery">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="main" Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Szkolnik - Rejestracja tokenu" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="tokenentry" Placeholder="Token" Margin="0,240,0,0" />
+        <Entry x:Name="symbolentry" Placeholder="Symbol" />
+        <Entry x:Name="pinentry" Placeholder="PIN" />
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Zajerestruj token" Clicked="RegisterTokenClicked" WidthRequest="250"/>
+            <Button Text="Wyloguj" Clicked="LogoutClicked" WidthRequest="250"/>
         </StackLayout>
-    </ContentPage.Content>
+
+        <Label x:Name="output" HorizontalTextAlignment="Center" ></Label>
+    </StackLayout>
 </ContentPage>

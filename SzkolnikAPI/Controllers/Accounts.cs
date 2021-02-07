@@ -39,18 +39,18 @@ namespace SzkolnikAPI.Controllers
         }
 
         [HttpPost("[action]")]
-        public http.IHttpActionResult Register([FromBody]Account json)
+        public string Register([FromBody]Account json)
         {
             SQLAccounts.NewAccount(json);
-            return (http.IHttpActionResult)Ok();
+            return "OK";
         }
 
         [HttpPost("[action]")]
-        public http.IHttpActionResult RegisterVulcan([FromBody] Account act)
+        public string RegisterVulcan([FromBody] Account act)
         {
             SQLAccounts.UpdateToken(act.login, act.token);
             VulcanAPI.runScript("./Code/Python/register.py", string.Format("{0} {1} {2}", act.token, act.symbol, act.pin));
-            return (http.IHttpActionResult)Ok();
+            return "OK";
         }
     }
 }
