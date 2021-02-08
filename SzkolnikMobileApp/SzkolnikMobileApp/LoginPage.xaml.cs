@@ -14,6 +14,8 @@ namespace SzkolnikMobileApp
     {
         public LoginPage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
+
             HTTPRequest.api = @"http://192.168.2.36:5000"; 
             InitializeComponent();
 

@@ -4,16 +4,31 @@
              x:Class="SzkolnikMobileApp.LoginPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Szkolnik - Logowanie" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Label Text="Szkolnik" HorizontalTextAlignment="Center" TextColor="#007bff" FontSize="72" FontFamily="Segoe" FontAttributes="Bold"/>
+        <Label Text="Logowanie" HorizontalTextAlignment="Center" TextColor="Gray" FontSize="52" FontFamily="Segoe" Padding="0,50,0,0" FontAttributes="Bold"/>
+
+
+        <Frame Style="{StaticResource Outline}" HeightRequest="200" Margin="50,50,50,0">
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="Login" Padding="0,0,0,45"/>
+                    <Entry x:Name="loginentry"/>
+                </StackLayout>
+            </Frame>
+        </Frame>
+
+        <Frame Style="{StaticResource Outline}" HeightRequest="200">
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="Hasło" Padding="0,0,0,45"/>
+                    <Entry x:Name="passwordentry" IsPassword="true"/>
+                </StackLayout>
+            </Frame>
         </Frame>
         
-        <Entry x:Name="loginentry" Placeholder="Login" Margin="0,240,0,0" />
-        <Entry x:Name="passwordentry" IsPassword="true" Placeholder="Hasło" />
-        
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Text="Login" Clicked="LoginClicked" WidthRequest="250"/>
-            <Button Text="Zarejestruj" Clicked="RegisterClicked" WidthRequest="250"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,50,0,0">
+            <Button Text="Zaloguj" Clicked="LoginClicked"/>
+            <Button Text="Zarejestruj" Clicked="RegisterClicked"/>
         </StackLayout>
         
         <Label x:Name="output" HorizontalTextAlignment="Center" ></Label>

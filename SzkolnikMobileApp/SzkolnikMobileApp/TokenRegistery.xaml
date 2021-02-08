@@ -4,17 +4,39 @@
              x:Class="SzkolnikMobileApp.TokenRegistery">
     
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Szkolnik - Rejestracja tokenu" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Label Text="Szkolnik" HorizontalTextAlignment="Center" TextColor="#007bff" FontSize="72" FontFamily="Segoe" FontAttributes="Bold"/>
+        <Label Text="Rejestracja Tokenu" HorizontalTextAlignment="Center" TextColor="Gray" FontSize="52" FontFamily="Segoe" FontAttributes="Bold"/>
+
+        <Frame Style="{StaticResource Outline}" HeightRequest="200" Margin="50,25,50,0">
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="Token" Padding="0,0,0,25"/>
+                    <Entry x:Name="tokenentry"/>
+                </StackLayout>
+            </Frame>
+        </Frame>
+        
+        <Frame Style="{StaticResource Outline}" HeightRequest="200" Margin="50,25,50,0">
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="Symbol" Padding="0,0,0,25"/>
+                    <Entry x:Name="symbolentry" />
+                </StackLayout>
+            </Frame>
         </Frame>
 
-        <Entry x:Name="tokenentry" Placeholder="Token" Margin="0,240,0,0" />
-        <Entry x:Name="symbolentry" Placeholder="Symbol" />
-        <Entry x:Name="pinentry" Placeholder="PIN" />
-        
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Text="Zajerestruj token" Clicked="RegisterTokenClicked" WidthRequest="250"/>
-            <Button Text="Wyloguj" Clicked="LogoutClicked" WidthRequest="250"/>
+        <Frame Style="{StaticResource Outline}" HeightRequest="200" Margin="50,25,50,25">
+            <Frame BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="PIN" Padding="0,0,0,25"/>
+                    <Entry x:Name="pinentry"/>
+                </StackLayout>
+            </Frame>
+        </Frame>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+            <Button Text="Zajerestruj token" Clicked="RegisterTokenClicked" WidthRequest="200"/>
+            <Button Text="Wyloguj" Clicked="LogoutClicked" WidthRequest="200"/>
         </StackLayout>
 
         <Label x:Name="output" HorizontalTextAlignment="Center" ></Label>
