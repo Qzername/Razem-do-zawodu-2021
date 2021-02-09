@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SzkolnikMobileApp.LoginPage">
+             x:Class="SzkolnikMobileApp.LoginPage"
+             NavigationPage.HasNavigationBar="True">
 
     <StackLayout>
         <Label Text="Szkolnik" HorizontalTextAlignment="Center" TextColor="#007bff" FontSize="72" FontFamily="Segoe" FontAttributes="Bold"/>
         <Label Text="Logowanie" HorizontalTextAlignment="Center" TextColor="Gray" FontSize="52" FontFamily="Segoe" Padding="0,50,0,0" FontAttributes="Bold"/>
 
-
         <Frame Style="{StaticResource Outline}" HeightRequest="200" Margin="50,50,50,0">
             <Frame BackgroundColor="White">
                 <StackLayout>
-                    <Label Text="Login" Padding="0,0,0,45"/>
+                    <Label Text="Login" Padding="0,0,0,45"/> <!-- 0,0,0,45-->
                     <Entry x:Name="loginentry"/>
                 </StackLayout>
             </Frame>

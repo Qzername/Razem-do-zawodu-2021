@@ -30,7 +30,7 @@ namespace SzkolnikMobileApp
             };
 
             HTTPRequest.Post("/api/Accounts/RegisterVulcan/", acc);
-            Application.Current.MainPage = new MainPage();
+            Application.Current.MainPage =new MainPage();
         }
 
         private void LogoutClicked(object sender, EventArgs e)
