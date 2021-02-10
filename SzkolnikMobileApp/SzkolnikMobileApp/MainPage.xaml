@@ -3,14 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SzkolnikMobileApp.MainPage"
              NavigationPage.HasNavigationBar="False">
-    <FlexLayout>
-        <Button Text="Wyloguj" Clicked="LogoutClicked" WidthRequest="250" HeightRequest="50"/>
-        <Button Text="move" Clicked="Move" WidthRequest="1050" HeightRequest="50"/>
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Label Text="Szkolnik" HorizontalTextAlignment="Center" TextColor="#007bff" FontSize="72" FontFamily="Segoe" FontAttributes="Bold"/>
         
-        <Label x:Name="output" HorizontalTextAlignment="Center" ></Label>
-        
-        <Frame x:Name="frame" Margin="0,0,100,0" HeightRequest="1000" WidthRequest="780"  BackgroundColor="Blue">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,50,0,0">
+            <Button Text="Oceny" Clicked="LogoutClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Plan lekcji" Clicked="LogoutClicked" WidthRequest="245" HeightRequest="245"/>
+        </StackLayout>
 
-        </Frame>
-    </FlexLayout>
+        <Button Text="Wyloguj" Clicked="LogoutClicked" WidthRequest="250" HeightRequest="50"/>
+    </StackLayout>
+    
+    
 </ContentPage>
