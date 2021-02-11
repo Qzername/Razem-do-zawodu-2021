@@ -22,5 +22,10 @@ namespace SzkolnikMobileApp
             Application.Current.Properties["password"] = null;
             Application.Current.MainPage = new LoginPage();
         }
+
+        void MarksClicker(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MarksPage());
+        }
     }
 }

@@ -7,7 +7,7 @@
         <Label Text="Szkolnik" HorizontalTextAlignment="Center" TextColor="#007bff" FontSize="72" FontFamily="Segoe" FontAttributes="Bold"/>
         
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,50,0,0">
-            <Button Text="Oceny" Clicked="LogoutClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Oceny" Clicked="MarksClicker" WidthRequest="245" HeightRequest="245"/>
             <Button Text="Plan lekcji" Clicked="LogoutClicked" WidthRequest="245" HeightRequest="245"/>
         </StackLayout>
 

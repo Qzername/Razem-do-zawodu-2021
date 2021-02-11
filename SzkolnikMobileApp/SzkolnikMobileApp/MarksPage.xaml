@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SzkolnikMobileApp.MarksPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Oceny" HorizontalTextAlignment="Center" TextColor="#007bff" FontSize="72" FontFamily="Segoe" FontAttributes="Bold"/>
+            <ScrollView>
+                <StackLayout x:Name="content">
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -58,7 +58,7 @@ namespace SzkolnikMobileApp
                 return;
             }
 
-            Application.Current.MainPage = new MainPage();
+            Application.Current.MainPage = new NavigationPage(new MainPage());
 
             output.Text = fromAPI;
         }
