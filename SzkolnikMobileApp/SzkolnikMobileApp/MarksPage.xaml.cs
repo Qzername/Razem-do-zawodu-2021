@@ -42,7 +42,7 @@ namespace SzkolnikMobileApp
                 foreach (Mark m in thisSubjectMarks)
                     marksXMLtext += m.content + ", ";
 
-                marksXMLtext =marksXMLtext.Remove(marksXMLtext.Length - 2);
+                marksXMLtext = marksXMLtext.Remove(marksXMLtext.Length - 2);
 
                 content.Children.Add(new Label()
                 {
@@ -50,7 +50,7 @@ namespace SzkolnikMobileApp
                     HorizontalTextAlignment = TextAlignment.Start,
                     Padding = new Thickness(10, 0, 10, 0)
                 });
-             }
+            }
         }
     }
 }

@@ -15,3 +15,4 @@ C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Deb
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\SzkolnikMobileApp.csprojAssemblyReference.cache
 C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\MarksPage.xaml.g.cs
+C:\Users\huber\source\repos\Szkolnik\SzkolnikMobileApp\SzkolnikMobileApp\obj\Debug\netstandard2.0\LessonsPage.xaml.g.cs

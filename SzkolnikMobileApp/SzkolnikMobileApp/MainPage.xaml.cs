@@ -23,9 +23,14 @@ namespace SzkolnikMobileApp
             Application.Current.MainPage = new LoginPage();
         }
 
-        void MarksClicker(object sender, EventArgs e)
+        void MarksClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MarksPage());
+        }
+
+        void LessonsClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LessonsPage());
         }
     }
 }

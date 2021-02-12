@@ -19,4 +19,12 @@ namespace SzkolnikMobileApp.Code
         public string subject { get; set; }
         public string teacher { get; set; }
     }
+
+    public class Lesson
+    {
+        public string subject { get; set; }
+        public string teacher { get; set; }
+        public string fromTime { get; set; }
+        public string toTime { get; set; }
+    }
 }
