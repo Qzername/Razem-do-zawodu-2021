@@ -5,14 +5,21 @@
              NavigationPage.HasNavigationBar="False">
     <StackLayout VerticalOptions="CenterAndExpand">
         <Label Text="Szkolnik" HorizontalTextAlignment="Center" TextColor="#007bff" FontSize="72" FontFamily="Segoe" FontAttributes="Bold"/>
-        
+
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,50,0,0">
             <Button Text="Oceny" Clicked="MarksClicked" WidthRequest="245" HeightRequest="245"/>
             <Button Text="Plan lekcji" Clicked="LessonsClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Chat" Clicked="LessonsClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Sklepik" Clicked="LessonsClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Biblioteka" Clicked="LessonsClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Statystyki" Clicked="LessonsClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Uwagi" Clicked="LessonsClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Zadania" Clicked="LessonsClicked" WidthRequest="245" HeightRequest="245"/>
+            <Button Text="Aktualności" Clicked="LessonsClicked" WidthRequest="245" HeightRequest="245"/>
         </StackLayout>
 
         <Button Text="Wyloguj" Clicked="LogoutClicked" WidthRequest="250" HeightRequest="50"/>
     </StackLayout>
-    
-    
+
+
 </ContentPage>
